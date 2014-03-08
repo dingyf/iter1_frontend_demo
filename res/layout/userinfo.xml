@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:id="@+id/Logout"
+            android:onClick="logout" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    <TextView
+            android:layout_width="262dp"
+            android:layout_height="170dp"
+            android:text="Message"
+            android:id="@+id/textView"
+            android:textSize="20dp"
+            android:onClick="logout" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/Logout"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Activities"
+            android:id="@+id/my_act"
+            android:onClick="myActivities" android:layout_alignLeft="@+id/textView" android:layout_alignBottom="@+id/Logout"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Act"
+            android:id="@+id/create_act"
+            android:onClick="createActivities"
+            android:layout_alignParentLeft="true" android:layout_marginLeft="110dp"
+            android:layout_alignTop="@+id/Logout"/>
+</RelativeLayout>
